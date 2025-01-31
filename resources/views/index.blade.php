@@ -61,7 +61,7 @@
         <div class="container pt-5 hero-join">
             <h2>CLICK TO JOIN</h2>
             <h1>TOURNAMENT</h1>
-            <button class="btn">CLICK HERE</button>
+            <a href="{{ url('/daftar') }}" class="btn">CLICK HERE</a>
         </div>
     </div>
 
