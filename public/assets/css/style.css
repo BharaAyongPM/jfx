@@ -1,0 +1,470 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&family=Poppins:display=swap');
+
+.btn-danger {
+  background: linear-gradient(90deg, #C30000 0%, #8D0000 100%);
+}
+.btn-white {
+  background: #FFF;
+}
+
+/* General Styles */
+body {
+  font-family: 'Squada One', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container-nav {
+  width: 70%;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white; /* Buat navbar transparan */
+    box-shadow: none; /* Hilangkan bayangan */
+    transition: background-color 0.3s ease; /* Efek smooth saat scroll */
+    font-family: "poppins";
+    padding: 20px 30px;
+    z-index: 9999;
+  }
+
+.navbar-dark .nav-link {
+  color: rgb(0, 0, 0) !important; /* Warna teks putih untuk navbar */
+  font-weight: bold;
+}
+
+.navbar-dark .nav-link:hover {
+  color: red !important; /* Warna teks saat hover */
+}
+
+.navbar .logo img {
+  width: 176px;
+}
+
+.navbar.shrink {
+    height: 80px; /* Ketinggian navbar mengecil */
+    transition: all 0.3s ease;
+}
+
+.navbar.shrink .logo  img {
+    transition: all 0.3s ease;
+    width: 80px;
+}
+
+.navbar.shrink nav a {
+    font-size: 14px; /* Ukuran teks menu mengecil */
+    transition: all 0.3s ease;
+}
+
+.navbar .btn {
+  border-radius: 85px;
+  margin: 0 20px;
+}
+
+.navbar .login {
+  color: #C30000;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background-image: url('/assets/img/baru/hero-landing-page.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 1024px;
+  z-index: 9991;
+}
+
+.hero-section .hero-join {
+  position: relative;
+  top: 450px; /* Pindahkan 50px ke bawah */
+}
+
+.hero-section h1 {
+  font-size: 7rem;
+  margin-bottom: 1px;
+}
+
+.hero-section h2 {
+  font-size: 4rem;
+  margin-bottom: 5px;
+  line-height: 0.7;
+}
+
+.hero-section .btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px 80px;
+  background :linear-gradient(90deg, #C30000 0%, #8D0000 100%);
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+
+
+/* Banner Section */
+.banner {
+  position: relative;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top : -100px;
+  z-index: 9998;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+/* =======================Info Selection====================== */
+
+.info-section {
+  padding: 50px 20px;
+  background-color: #fff; /* Ganti warna background jika diperlukan */
+}
+
+.info-section .video-section {
+  text-align: center;
+}
+
+.info-section .text-section {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.info-section .text-section h1 {
+  font-size: 7rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+
+.info-section .logo {
+  max-width: 140px; /* Atur ukuran logo */
+  height: auto;
+}
+
+
+.info-section .text-section .description {
+  font-family: "poppins";
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333; /* Warna teks */
+}
+
+
+/* ================================Kategori Section====================== */
+.category-section {
+  padding: 30px 20px;
+  background-color: #fff; /* Ganti warna background jika diperlukan */
+}
+
+.category-section .title {
+  padding: 20px 0px;
+}
+
+ .category-section .title img{
+  width: 100%;
+ }
+
+.category-section .kategori img {
+  width: 100%;
+  padding: 20px 0;
+}
+
+
+/* =============================== Regristation ========================== */
+.regristation-section {
+  padding: 30px 0;
+}
+
+.regristation-section .title {
+  background: linear-gradient(90deg, #C30000 0%, #8D0000 100%);
+  color: white;
+  text-align: center;
+}
+
+.regristation-section .title h1 {
+  /* font-family: "Squad One"; */
+  font-size: 3rem;
+}
+
+.regristation-section img {
+  width:100%;
+  padding: 30px 0;
+}
+
+/* ===============================Supported=========================== */
+.supported-section {
+  padding: 30px 0;
+}
+
+.supported-section .title {
+  text-align: center;
+}
+
+.supported-section .title h1 {
+  font-size: 3rem;
+  color: black;
+}
+
+.supported-section .card {
+  height: 200px; /* Tinggi keseluruhan card */
+  border-radius: 20px; /* Membulatkan sudut secara keseluruhan */
+  overflow: hidden; /* Memastikan elemen tetap dalam radius card */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+  margin: 20px auto; /* Pusatkan card */
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e0e0;
+}
+
+.logo-section {
+  background-color: #ffffff; /* Background putih untuk logo */
+  flex: 2; /* Proporsi tinggi bagian logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 30px; /* Radius melengkung di kiri bawah */
+  border-bottom-right-radius: 30px; /* Radius melengkung di kanan bawah */
+  padding: 50px 50px;
+  height: 50%;
+}
+
+.supported-section .logo {
+  width: 250px; /* Ukuran logo */
+  height: auto;
+}
+
+.supported-section .logo2 {
+  width: auto; /* Ukuran logo */
+  height: 120px;
+}
+
+.supported-section .text-section {
+  background-color: #e0e0e0; /* Background abu-abu untuk teks */
+  flex: 1; /* Proporsi tinggi bagian teks */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supported-section .text {
+  font-size: 1.2rem;
+  color: #000; /* Warna teks */
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* ===================================Form Regristation=========================== */
+.form-regristation {
+  padding: 200px 0;
+}
+
+.form-regristation .card-form {
+  width: 60%;
+  margin : 0 auto;
+  border: solid 1px #fff;
+  padding: 20px 90px;
+  border-radius: 30px;
+  box-shadow: 0px 3px 4px 5px rgba(0, 0, 0, 0.10);
+}
+
+.form-regristation .title {
+  background: linear-gradient(90deg, #C30000 0%, #8D0000 100%);
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* .form-regristation .konten {
+  width: 60%;
+} */
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  font-family: "poppins";
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-group input {
+  font-family: "poppins";
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #b50000;
+}
+
+.btn-submit {
+  background-color: #25d366;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.btn-submit i {
+  font-size: 1.5rem;
+}
+
+.btn-submit:hover {
+  background-color: #1ebe57;
+}
+
+.disclaimer {
+  font-family: "poppins";
+  font-size: 1rem;
+  color: #555555;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/* ==============================Accomodation========================= */
+.accomodation {
+  padding: 180px 0;
+}
+
+.accomodation .banner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.accomodation .konten {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+
+.accomodation .konten .search-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.accomodation .konten .search-container i {
+  font-size: 1.2rem;
+  color: #888;
+  margin-right: 10px;
+}
+
+.accomodation .konten .search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.accomodation .title {
+  margin: 30px 0 15px 0;
+}
+
+.accomodation .card {
+  padding: 20px;
+  margin: auto 0;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  text-align: start;
+}
+
+.accomodation .card img {
+  border-radius: 30px;
+}
+
+.accomodation .card h4 {
+  font-family: "poppins";
+  text-align: start;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.accomodation .card i {
+  color: #ffd000;
+}
+
+.accomodation .card .booking {
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+.accomodation .card p {
+  font-weight: 700;
+}
+
+.accomodation .card .booking i{
+  color: #C30000;
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.accomodation .card .booking a {
+  padding: 5px 15px;
+  background-color: #C30000;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.accomodation .konten .deskripsi {
+  padding: 10px 20px 0 45px;
+}
+
+.accomodation .konten .deskripsi p {
+  font-family: "poppins";
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: start;
+  text-align: justify;
+}
+
+.accomodation .konten p span {
+  font-weight: 700;
+}
